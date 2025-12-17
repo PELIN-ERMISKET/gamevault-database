@@ -27,7 +27,7 @@ CREATE TABLE game_genres (
   id SERIAL PRIMARY KEY,
   game_id INT NOT NULL,
   genre_id INT NOT NULL,
-  CONSTRAINT fk_gg_game FOREIGN KEY (game_id) REFERENCES games(id) ON DELETE CASCADE;,
+  CONSTRAINT fk_gg_game FOREIGN KEY (game_id) REFERENCES games(id) ON DELETE CASCADE;
   CONSTRAINT fk_gg_genre FOREIGN KEY (genre_id) REFERENCES genres(id),
   CONSTRAINT uq_game_genre UNIQUE (game_id, genre_id)
 );
@@ -126,6 +126,7 @@ ORDER BY price DESC;
 
 SELECT * FROM games
 WHERE title ILIKE '%si%';
+
 
 
 
