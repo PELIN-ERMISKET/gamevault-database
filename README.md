@@ -1,5 +1,7 @@
 ## 📘 GameVault Database Project
 
+This project demonstrates end-to-end PostgreSQL database design workflow, from schema modeling to querying relational data using real-world game catalog scenarios.
+
 GameVault is a relational database project designed to manage video games, their developers, and genres.
 The database is built using PostgreSQL and follows proper normalization rules.
 
